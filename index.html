@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fato na Hora - Notícias Urgentes, Verdade e Tendências</title>
+    <title>Fato na Hora - Jornalismo de Alta Fidelidade</title>
     <style>
         :root { --primary: #002d5a; --accent: #ff0000; --text: #222; --bg: #ffffff; }
         body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; margin: 0; color: var(--text); }
@@ -12,149 +12,55 @@
         header { background: white; padding: 25px 0; border-bottom: 5px solid var(--accent); text-align: center; }
         header h1 { margin: 0; color: var(--primary); font-size: 48px; font-weight: 900; letter-spacing: -2px; }
         nav { background: #fff; padding: 12px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 100; }
-        nav a { color: var(--primary); margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
-        nav a:hover { color: var(--accent); }
-        .main-container { max-width: 1140px; margin: 25px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 25px; padding: 0 20px; }
-        .news-card { background: white; border-radius: 4px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid var(--accent); }
-        .news-card h2 { margin: 10px 0; font-size: 1.7em; color: #111; line-height: 1.2; }
-        .btn-leia { display: inline-block; background: var(--accent); color: white; text-decoration: none; font-weight: bold; margin-top: 15px; padding: 10px 20px; border-radius: 4px; transition: 0.3s; }
-        .btn-leia:hover { opacity: 0.8; }
-        .ad-placeholder { background: #f9f9f9; border: 1px dashed #ccc; color: #999; text-align: center; padding: 40px 0; margin-bottom: 20px; font-weight: bold; }
-        .sidebar { background: #fff; padding: 20px; border-radius: 4px; height: fit-content; border: 1px solid #ddd; }
-        footer { background: var(--primary); color: white; padding: 45px 20px; text-align: center; margin-top: 50px; }
-        .badge { background: var(--accent); color: white; padding: 2px 6px; font-size: 10px; font-weight: bold; border-radius: 2px; vertical-align: middle; }
+        nav a { color: var(--primary); margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 14px; }
+        .main-container { max-width: 1000px; margin: 25px auto; padding: 0 20px; }
+        .article { background: white; border-radius: 8px; padding: 40px; margin-bottom: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-top: 5px solid var(--accent); }
+        .article h2 { font-size: 2.4em; color: #111; line-height: 1.2; margin-top: 0; }
+        .content { text-align: justify; color: #333; line-height: 1.8; font-size: 17px; }
+        .ad-placeholder { background: #f9f9f9; border: 1px dashed #ccc; color: #999; text-align: center; padding: 30px; margin: 20px 0; font-weight: bold; }
+        .badge { background: var(--accent); color: white; padding: 4px 10px; font-size: 12px; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
+        footer { background: var(--primary); color: white; padding: 45px; text-align: center; }
     </style>
 </head>
 <body>
-    <div class="top-bar">Acompanhe Agora: O Pulso da Realidade em Serra-ES</div>
-    <header><h1>FATO NA HORA</h1><p>Informação com Integridade e Precisão Matemática</p></header>
-    <nav>
-        <a href="index.html">Destaques</a>
-        <a href="index.html">Brasil</a>
-        <a href="index.html">Economia</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="privacidade.html">Privacidade</a>
-    </nav>
+    <div class="top-bar">Acompanhe o Fato na Hora - Sincronia Realidade XYZ</div>
+    <header><h1>FATO NA HORA</h1><p>A notícia analisada com precisão matemática</p></header>
+    <nav><a href="index.html">Destaques</a> | <a href="sobre.html">Sobre Nós</a> | <a href="privacidade.html">Privacidade</a></nav>
     <div class="main-container">
-        <div class="news-feed">
-            <div class="ad-placeholder">ANÚNCIO GOOGLE ADSENSE (Vetor de Capital RTX 4060 Ti)</div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
+        <div class="ad-placeholder">ANÚNCIO GOOGLE ADSENSE (Vetor de Capital RTX 4060 Ti)</div>
+        
+            <div class="article">
+                <span class="badge">COBERTURA PROFUNDA</span>
                 <h2>‘Beijo da morte’: adolescente mata namorada em MG - Estado de Minas</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxObTBPS0hQYlBGa3ZrTnJfbGl6MWpkbUpjV05UR1JzTDl5eHBxYVZaRk00cTVzYW9BNzZGOWxpNmJ5cE01eXJ3Xy1Fd0ljZWJxRkdOZU93cnR4YUxfd2xrdDNpQWhNeHZCY19XMnUzRDBVVDZ6VGNfVUVlTG9kN085V29UVU52OEMzRm9QS0hTaThDVTdVTUxVemdhYznSAaIBQVVfeXFMTlJhWUpyWDZTNmlBSkM5QTBLS3drck8yQnVGYldNRkNwYkUzRk9jU0pzeTJsUFg3dlhQc3Q1d3hNRTZFbHpDSG9GOUFjZzl3QTUtNTJQLVc4YldMalVuUlZZMmdmdEdIbmJuZkxsd1R3RzlZd3Nka3pyX0t1MDBnVFNnVldycDdBOUxia2lWNnVUdTk3c3N5OFBaa25GWFNlVVNB?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
+                <div class="content">Processando dados brutos... (Erro de Sincro: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)</div>
+                <p><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxObTBPS0hQYlBGa3ZrTnJfbGl6MWpkbUpjV05UR1JzTDl5eHBxYVZaRk00cTVzYW9BNzZGOWxpNmJ5cE01eXJ3Xy1Fd0ljZWJxRkdOZU93cnR4YUxfd2xrdDNpQWhNeHZCY19XMnUzRDBVVDZ6VGNfVUVlTG9kN085V29UVU52OEMzRm9QS0hTaThDVTdVTUxVemdhYznSAaIBQVVfeXFMTlJhWUpyWDZTNmlBSkM5QTBLS3drck8yQnVGYldNRkNwYkUzRk9jU0pzeTJsUFg3dlhQc3Q1d3hNRTZFbHpDSG9GOUFjZzl3QTUtNTJQLVc4YldMalVuUlZZMmdmdEdIbmJuZkxsd1R3RzlZd3Nka3pyX0t1MDBnVFNnVldycDdBOUxia2lWNnVUdTk3c3N5OFBaa25GWFNlVVNB?oc=5" target="_blank" style="color:var(--accent); font-weight:bold;">Acesse a fonte original da informação ></a></p>
             </div>
             
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Trump diz que Irã pediu cessar-fogo aos Estados Unidos na guerra - CNN Brasil</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPTmstbEVDZmZ1ZDBTSnd3VmxZS2QzcHVNd0RaMFVGRlBab1RDOXF1M3dmOFFLTlhISm9xNVNndHFZX3h1Z1ZTMzJteHh1TWlJN2JVV0lsSWwxLVdacVpRSGR6QVpUdEQyNURvbFpMOExxZHBvU3VZWEVoM1VnRHVGYmFiSTllOTRFVFd4RFhpbzhBWDhvWEN4Q1JMSU4tRFk?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
+            <div class="article">
+                <span class="badge">COBERTURA PROFUNDA</span>
+                <h2>Árvore de grande porte cai e atinge cinco carros em condomínio na Grande BH - Estado de Minas</h2>
+                <div class="content">Processando dados brutos... (Erro de Sincro: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)</div>
+                <p><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxON1JtbzNfZnlFNm9YbEFuRkFfNDdad2ZHVTJOb0lSckIwcmZ3blJXWjNnVWNjVTVwNXBQb29aRkNDVHpBTHY2YkEtRFVRVGlERXUtbjRaa1RSN25TYnJBbEQ1WGxkZ1VzV2Z0UFhZQWdXdVBKMXo2bGs3dGJmSU4xWlo0aUlwRVltdWFUX0xfYW5yRDlXMjRhNTBpRk1aYTJjVTRNS0RHamJlTG43QmYzYmI4XzNOVTdjZFdjempzNGJ3bVXSAcgBQVVfeXFMUHNxeGpndDFsamtnZjdGMEVsbnNIYjYwUTVwUldJYW9ZZHlnSDJlcWpEWTJZa1NEb2hsR01DcDhzazhIcURybFdQZ0F2aEpFRXFya3RpRWJnbWN0V0JuUHRzaVgxdmFXdHg4R1ZhTk10bFZoZGNCSWk1Q3E0eUxxaTBhT0hUX0MwTGh6aF92TDl6SVM5V05rLXpiTFhaSnU2VUxrT1Z2aVRoVG8yZzFWcVl1cDNjNU1SZTVCWF9ZTjhjQmNMUlRYd3o?oc=5" target="_blank" style="color:var(--accent); font-weight:bold;">Acesse a fonte original da informação ></a></p>
             </div>
             
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Vamos ter que colocar alguém na cadeia, diz Lula sobre alta do diesel - CNN Brasil</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPemZnREo3MG54NkozalRuSk5xVjNabEhFWVBta0pmblhwYngzeUhaYXRxMjhickZ4VUswYnlhSlRiaGdUNzhlbjJCSThhdXVmSVRNRHZVVDlVYnMzWHp4OGx0elZaU1NqY01VZ1RfTGVmN2VXS09YM3NEdERBZ2xVVzd4YzZpUUFrLWdFZGFBTmpOdUh3OVg4TTRGZTBZUE42NE5iZlAwcTc3ZGs?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
+            <div class="article">
+                <span class="badge">COBERTURA PROFUNDA</span>
+                <h2>EUA dizem que suspeito ligado ao Irã é detido no Iraque por sequestro de jornalista americana - O Globo</h2>
+                <div class="content">Processando dados brutos... (Erro de Sincro: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)</div>
+                <p><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOR2s1ZEJfRzc5M2RXWjhNWUY2b1VwN0w1RlVlU3Q0RGkyNGdZdG1jWndJeG05UEMyLTBQcmZ0LU1ES1JhdFVBRENhX0JtLVZkUm1RejNMaHhPdWp1S01RRC1VSl9DOUNjNExaYlY4RFlvVVV3blFCNldvc3hmQkxPV3poTG1WMWxYeVJ4ay1uRHNCbThIbzRfQzlXZnpTZUYtSFdscVRrd0NYcngtaEg1dmtWZTJwaGlZUURtT1pLdG9PYmpxQ2lXVkJoMlJSQzdxYUdmN0JQUjdNSUdTU1hnYTZfY9IB8gFBVV95cUxNUS1MT1VFUUtCbVJySUJ6Y1RaTW8tTTlKZTF0bTFxQm9XbVFqV3Z3NkEyT2tSSmtOdGgxQ2FDdE81UFJIa3dlU0l1Zk5EdkRZSjgzR2tmdXlPRUJGbXhnR1VjZWtiek02ZjVSV0pBMTY3eXBaZjJwd1AyNTdNNzIwMk9kcHJFSVlOVW9GMzAybTlUNWdMdG9DVkI4Uy1yRk1FWnJyX3JrdWNFdG16cE1ROXNDOUQ2YVNKN0tuM0lrNXlGTkRMUVY5R1pXYmQ5SzRhbG40eGhFakptTFhrTl8wTEVlWGkyYVpycmNIcTV3Q0M4UQ?oc=5" target="_blank" style="color:var(--accent); font-weight:bold;">Acesse a fonte original da informação ></a></p>
             </div>
             
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Crusoé: Pacheco lidera em Minas como lulista, indica AtlasIntel - O Antagonista</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOVllkcW5YbTBMSFVqcllubjJBRG1aekpJZDltOWc3OF9VWFpKOW9yOHRvdFlVbHd1ZWt5ZGVGcGVnZGRjMC1qSkE1aGxzVGZOWEJBdHB5MjJFVC15MnlZcXp6SmMzdmpvYVNxcXAtQTFCaXBRX3ZGX2c4bG9qbFdHOUdKRUNFaS0ySlpyM1B5a0RSNm52WHFyb0d4czRqUQ?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
+            <div class="article">
+                <span class="badge">COBERTURA PROFUNDA</span>
+                <h2>Trump afirma que EUA consideram fortemente saída da Otan - R7</h2>
+                <div class="content">Processando dados brutos... (Erro de Sincro: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)</div>
+                <p><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNQ3hyTUQ5aEY4LUhrM3hyTjhPLVczMFNrR3RpZ3ZZU0NmVC1wNER1M2NDcjhGcDN6YloyRGREVW1kY3hkN3dPRG1GQVl2UXpTZ00xc1NOMmVZT1JSVGhuWTFYRmY5aXhlSU1ORVNLcndWcktuaFZzRk8wRC1xZS1rcDVIQTdKbWVrcEtGTFBQZnhQanZzV2tzMDVtUVdJUEp0aF9KaEV3TQ?oc=5" target="_blank" style="color:var(--accent); font-weight:bold;">Acesse a fonte original da informação ></a></p>
             </div>
             
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Trump diz que considera 'seriamente' tirar os EUA da Otan - G1</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYmxsdjJUeHM2MFkxOWJvUG8yUDU3RzRKdTVZelZjY3UyQ0hOT1NGazVPX0RTdWhLaVZtOC1xenNjZjllU1JIY1JzQ2ZrUU1YNUtPYVgxLTZ4SUdvS2RySUJSMEZmckxPWFRzQlBRMjNkVFRyTV9tN0ZvanU1cXU1UVRxSWRwejVfX0FyVjZHdDc1QVpUYkQxRktucjZDV3UxdEdZVDU0aERFUVHSAboBQVVfeXFMUGZoczB5MTZVcl95ZEdPWjM0a3J4emVSQXA5dXJsQ3otX1E5LXdZU3dlZ18wbDFLQkRWQ1QzeWx6S3hHc3VGaUJ6bWJmbzE2ZGItM2dRQTZ1Wnk5NU1neEF5RGNHR1RraFg0OF81bVpJZkxGdlVaY05CMHNqTWJGN0t4ajVpYnlMeDZPQUdLUUw4WnVUWE5NNEV1NnR4b1hkX281VUJMaS1EYTVTRDlPeHVrdUNXaG1yUnpn?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Mãe e filho morrem em acidente entre ônibus e bicicleta elétrica no Rio - CNN Brasil</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQenI4dE9OcjB6bzA4eVhiUTVVbklXanNSYVNUdDhHb2JtTmhuYUVHTE5jNWlCcDAtWmwxNjAtUWkzRkpHY0stSlExNzdJbmFCei1QZUZrYVFGRHprMU1hTjJVN29yZ2dZLWFtaGJKYlJiOW5RZ3lSel8tbG80Y1RKNUJoaEp2Q1d3dEw2aTI5SW1BZ05Ha1JWOUFHVUVMS1l4OHdfYTFndHpQa1hDbV9sdThqa1dXYXg5MENSeUZR?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Irã lança mísseis contra países do Oriente Médio após ameaça de Trump - CartaCapital</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOUS1FWkR0dDlmb3Z6NWUxSl9Tb2N4RWdXcHBRUDBVWm96SDNnbnRVU01hMUFkVG1VcFE1TURQZ2FiZXRLblc2V1F4ZnJ4T2hRc1lQRlRfeEVOT3Y0TGViMjVWUV9SZUhFV2RNTjkwWjVxZi1JbkEyZHA4S29NeHBmRzFNNkhZdzNVT0VKLTdzX2taYnZpZ19nVjhzNDU2MldzLTZ0V2FsNzBqX01l?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Licença-paternidade: entenda como funcionará nova lei que permite 20 dias de benefício - R7</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNR1drYjM4R3ZZZTdmbUdMWTA1eC05cG9KcWo5NjNSa2RzV2M4ekdreElsOEdoZkRWUENGdzROM29SaVdkYzY2Vmc3dEtSZENkTkdidVJSd0I1a3FzdXRwNGw5UTcwZUhjVjBtNFQ2VmRwRmF3eGRIRGdOSEQwTE4wVXdBYnd6MEVUbDU4VDZpczU5NXpZLWNWdFcweFdOaS1TNGNyYjBhSWhmRGxMUDE0SDRQRQ?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Alcolumbre pediu a Lula no domingo que não enviasse o nome de Messias - Metrópoles</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbnFTbUVxV2pLelFHVzJTT2xUUGRkLUo2dUgtbEdwSGJDTERoeHNYTGJVb1RoNnhCMnNzTUJKNjRiZEdycThxdTVXcGlUVkdldW12T2t0NEZKZHphM0VhUkNsSjRFX2VjUzJfUGhkQ1FMeUZ6eEhSYWV5RlI2MHNwU1F3WXVMdjRGVHl1TmpjWkhCcjRxWkdZTG5xWkczMFNvdUpBelo1QlJ2T0tBajNySXpsZmxRa3hB?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Governo Jorginho aceita proposta de Lula para baixar preço do diesel, mas impõe condições - NSC Total</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaE8zMlFXX2NVQUFzcDY0OUhCaWxYR2stZGFLc1poaVlSRm43cFRVVTRkTmRkbDhtcFlCS1lfaVI0VU5WcnlTb09PTFR5TnhBd2hXS2pEV1pDZjlJblc2UkhDWG81TGx6V2hpZGM0cFVQTnpUT0c5WDc5aWs2VUp3c2JlRTdwZ1RUTkVOZk1OLUpNUEkwdnBxZWVKdnJaeTNjUTVmNkVMVnZycEpKMFoweVlqTm9wWFBlbzQtUndFSXhiLUU?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>No Ceará, Lula diz que candidato é Elmano, critica Ciro e fala em Luzianne e Guimarães - Diário do Nordeste</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVmpSR25uMURMREJ5RzNGY1JmaGlEeDZpcWxnSm5CY3dvRWlNRWlNbUp0OXhpM0h2cG9GTDVjdkdfU2IyVk5hY1ZVNlFrcWlNZWtscWx3MFZaQUZhYlJBbGZoY1NWM3FDeDN3anBvZzgteUZSNENPZk05OHdHdmxrdDlQSmsyV012S3VKQlRSUnVnVHRnMWpSb2tVaThHdG1MSEh5Ujk4XzZPaElzeHRoalRFdEdyVTA2VHBnUFN3NEFUME45X1ZTS1d0d2lhajZ5RzJwMTFVVjExaEhJZk00bVpPVQ?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>ITA Ceará recebe Lula hoje para inauguração do primeiro bloco estudantil; veja imagens - Diário do Nordeste</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRWtmTlhwWC1ZWWo1Yk1RS2JYX0gweGlZaVBSdENGQnpPV1ZTalBCTUd2LWpjNFJ3TzVZOG9kZllpMmlrb2MweHhxQVVPOTZ6Ml82Nm1sVnlYZ3o4LXRxWlBEWGJFcVpYUENvZHlTNXZkT19IX0NmX3kzOGlXN1k3SElQN0YwNDlWUDlBYV8za01sbEppVmhPcWp6bEUwMW1TME1FZkN0MFZNVkp1MENMcENwSWtTcXc1ZXg2M2tWWlU2TWthZ0QwXzRESzdzdzh0T3dXbzVRRmJRbjFqQXc?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>‘Beijo da morte’: adolescente mata namorada em MG - Estado de Minas</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxObTBPS0hQYlBGa3ZrTnJfbGl6MWpkbUpjV05UR1JzTDl5eHBxYVZaRk00cTVzYW9BNzZGOWxpNmJ5cE01eXJ3Xy1Fd0ljZWJxRkdOZU93cnR4YUxfd2xrdDNpQWhNeHZCY19XMnUzRDBVVDZ6VGNfVUVlTG9kN085V29UVU52OEMzRm9QS0hTaThDVTdVTUxVemdhYznSAaIBQVVfeXFMTlJhWUpyWDZTNmlBSkM5QTBLS3drck8yQnVGYldNRkNwYkUzRk9jU0pzeTJsUFg3dlhQc3Q1d3hNRTZFbHpDSG9GOUFjZzl3QTUtNTJQLVc4YldMalVuUlZZMmdmdEdIbmJuZkxsd1R3RzlZd3Nka3pyX0t1MDBnVFNnVldycDdBOUxia2lWNnVUdTk3c3N5OFBaa25GWFNlVVNB?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Trump diz que Irã pediu cessar-fogo aos Estados Unidos na guerra - CNN Brasil</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPTmstbEVDZmZ1ZDBTSnd3VmxZS2QzcHVNd0RaMFVGRlBab1RDOXF1M3dmOFFLTlhISm9xNVNndHFZX3h1Z1ZTMzJteHh1TWlJN2JVV0lsSWwxLVdacVpRSGR6QVpUdEQyNURvbFpMOExxZHBvU3VZWEVoM1VnRHVGYmFiSTllOTRFVFd4RFhpbzhBWDhvWEN4Q1JMSU4tRFk?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-            <div class="news-card">
-                <span class="badge">URGENTE</span>
-                <h2>Vamos ter que colocar alguém na cadeia, diz Lula sobre alta do diesel - CNN Brasil</h2>
-                <p>Recebemos este sismo informativo via duto de dados global. Clique abaixo para ler a análise completa no portal de origem.</p>
-                <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPemZnREo3MG54NkozalRuSk5xVjNabEhFWVBta0pmblhwYngzeUhaYXRxMjhickZ4VUswYnlhSlRiaGdUNzhlbjJCSThhdXVmSVRNRHZVVDlVYnMzWHp4OGx0elZaU1NqY01VZ1RfTGVmN2VXS09YM3NEdERBZ2xVVzd4YzZpUUFrLWdFZGFBTmpOdUh3OVg4TTRGZTBZUE42NE5iZlAwcTc3ZGs?oc=5" class="btn-leia" target="_blank">LEIA A NOTÍCIA COMPLETA</a>
-            </div>
-            
-        </div>
-        <div class="sidebar">
-            <h3 style="color:var(--primary); border-bottom: 2px solid var(--accent);">TENDÊNCIAS</h3>
-            <p><strong>#1</strong> Mercado de Silício em Alta no Brasil</p>
-            <p><strong>#2</strong> Sincronia 1.618 ganha adeptos na rede</p>
-            <div class="ad-placeholder" style="height: 250px; margin-top: 20px;">PUBLICIDADE</div>
-        </div>
     </div>
     <footer>
-        <p><strong>FATO NA HORA</strong> - © 2026 - <a href="http://fatonahora.com.br" style="color:white; text-decoration:none;">fatonahora.com.br</a></p>
-        <p style="font-size: 10px; color: #aaa;">Processado via Kernel AUREA - Sincronia Local Serra-ES</p>
+        <p><strong>FATO NA HORA</strong> - © 2026 - fatonahora.com.br</p>
+        <p style="font-size: 10px; color: #aaa;">Gerado por Kernel AUREA 1.618 - Bunker 01 Serra-ES</p>
     </footer>
 </body>
 </html>
