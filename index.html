@@ -3,51 +3,118 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Index - Fato na Hora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - FATONAHORA</title>
     <style>
-        :root { --red: #cc0000; --blue: #003366; --bg: #f2f2f2; --text: #1a1a1a; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); margin: 0; color: var(--text); }
-        .top-bar { background: #000; color: #fff; padding: 8px; font-size: 11px; text-align: center; border-bottom: 3px solid var(--red); }
-        header { background: #fff; padding: 25px 0; border-bottom: 1px solid #ddd; text-align: center; }
-        .logo { color: var(--red); font-size: 55px; font-weight: 900; letter-spacing: -3px; margin: 0; font-family: 'Arial Black'; }
-        nav { background: var(--red); padding: 5px 0; position: sticky; top: 0; z-index: 1000; }
-        .nav-links { max-width: 1100px; margin: auto; display: flex; justify-content: center; gap: 20px; }
-        .nav-links a { color: white; text-decoration: none; font-weight: bold; font-size: 13px; text-transform: uppercase; padding: 10px; }
-        .nav-links a:hover { background: rgba(255,255,255,0.2); }
-        .container { max-width: 1100px; margin: 20px auto; display: grid; grid-template-columns: 1fr 320px; gap: 25px; padding: 0 20px; }
-        .news-card { background: #fff; padding: 25px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid var(--red); }
-        .news-card h2 { font-family: 'Georgia', serif; font-size: 28px; margin-top: 0; }
-        .news-card p { line-height: 1.8; font-size: 17px; text-align: justify; }
-        .ad-space { background: #eee; border: 1px dashed #bbb; color: #999; text-align: center; padding: 40px 0; margin-bottom: 20px; font-size: 12px; }
-        .sidebar { background: #fff; padding: 20px; border-radius: 4px; height: fit-content; border: 1px solid #ddd; }
-        footer { background: #111; color: white; padding: 40px; text-align: center; margin-top: 60px; }
+        body {{ font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }}
+        header {{ background-color: #fff; border-bottom: 4px solid #cc0000; padding: 20px; text-align: center; }}
+        .logo {{ font-size: 48px; font-weight: bold; color: #cc0000; letter-spacing: -2px; text-decoration:none; }}
+        nav {{ background-color: #cc0000; color: white; padding: 10px; text-align: center; font-weight: bold; position: sticky; top: 0; z-index: 1000; }}
+        nav a {{ color: white; text-decoration: none; margin: 0 15px; text-transform: uppercase; font-size: 14px; }}
+        .container {{ max-width: 1100px; margin: 20px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; padding: 0 10px; }}
+        .main-news {{ background: white; padding: 15px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }}
+        .card-principal {{ border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 20px; }}
+        .card-principal h2 {{ color: #333; font-size: 28px; margin: 10px 0; font-family: 'Georgia', serif; }}
+        .sidebar {{ background: #fff; padding: 15px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); height: fit-content; }}
+        .ad-space {{ background: #eee; height: 250px; display: flex; align-items: center; justify-content: center; color: #888; border: 1px dashed #ccc; margin-bottom: 20px; font-size: 11px; }}
+        .btn-ler {{ display: inline-block; background: #cc0000; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px; }}
     </style>
 </head>
 <body>
-    <div class="top-bar">Acompanhe agora: O Pulso da Notícia em Serra-ES | 03/04/2026 01:09</div>
-    <header><h1 class="logo">FATO<span style="color:#333;">NAHORA</span></h1></header>
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Destaques</a>
-            <a href="politica.html">Política</a>
-            <a href="tecnologia.html">Tecnologia</a>
-            <a href="fofoca.html">Fofoca</a>
-            <a href="saude.html">Saúde</a>
-            <a href="sobre.html">Sobre</a>
-        </div>
-    </nav>
-    <div class="container">
-        <main>
-            <div class="ad-space">ANÚNCIO GOOGLE ADSENSE (VETOR DE CAPITAL RTX 4060)</div>
-            <article class='news-card'><h2>Trump alerta que ‘há muito mais por vir’ após ataque destruir a maior ponte do Irã - R7</h2><p>Conteúdo em fase de revisão.</p><a href='https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcWJna1VQU3E0WlVYX2NYY1RmTlRUMjdMYUs4dFlsMXJNVEtSOHFJdkFyUnQ3SDNYVW9sR3BLUkNlNG96SjNFODUtMnNMSmJWdG5ZUndIX2hWVklMZDAxMGpHQW1YVy02dFJDU2cyZ0E1Rm5LZDhQc2xMQk1fNUZiXzFELTRGNFl0WlBfTWQxNWMwYWs3bGVFOXRISkxiT043ZVdUVVBKSGNjNlFPWVF0dG5GT0ZmWWN0OWh3?oc=5' target='_blank'>Fonte Original</a></article><article class='news-card'><h2>Sem os EUA, cerca de 40 países se reúnem para discutir a reabertura do Estreito de Ormuz. - Jovem Pan</h2><p>Conteúdo em fase de revisão.</p><a href='https://news.google.com/rss/articles/CBMiywFBVV95cUxNR1I0eU9tTDFfYnJDbWJ1aUVTdmlHenQ4Snd0NkEwU0tZTGFhNHdsNlhIdUdtM2Y5dm11MkNXN0FUZFQzSEFhLThEUDNmLWxRWFZVZ1NTLV9kOExYRWdSSFJWUXdOMDRKQlh1SzNZZVRxWWJ2bHFpcFNXMk96R2pfNEl5cno1WlhuT3k0bHhYeEkyX0R6QXBGTkxzeGpmcXZrMDBFN3dOMmNwQ2c2cEtJWkxCWkQ5QmJJVlpidk9MQ0cwT2NxZFN1UFVYUQ?oc=5' target='_blank'>Fonte Original</a></article>
-        </main>
-        <aside class="sidebar">
-            <h3>MAIS LIDAS</h3>
-            <p><strong>01.</strong> Por que o Ryzen 3 é soberano no Bunker 01?</p>
-            <p><strong>02.</strong> Sincronia 1.618: A nova era digital.</p>
-            <div class="ad-space" style="height:300px;">ANÚNCIO LATERAL</div>
-        </aside>
+<header><a href="index.html" class="logo">FATO<span style="color: #333;">NAHORA</span></a></header>
+<nav>
+    <a href="index.html">Início</a> <a href="politica.html">Política</a> <a href="tecnologia.html">Tecnologia</a> <a href="fofoca.html">Fofoca</a> <a href="saude.html">Saúde</a>
+</nav>
+<div class="container">
+    <div class="main-news">
+        <div class="ad-space">ESPAÇO RESERVADO PARA ADSENSE (VETOR DE CAPITAL)</div>
+        
+            <div class="card-principal">
+                <h2>Alerta vermelho: Grande Florianópolis entra na rota de temporais com raios e granizo - NSC Total</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQMnl0SHVhN2ZrajA3Y2FSZHdzQVV6SmVkZEc2MEJrLXQtc3BjUXhfcG10VmZ3am1ZZVRxT1FJMThkOVJIMFBJczFPTTBGalN5b0VadjdLWTVJSS1ucDlIaHVyeXVuT2F1ODd4emphOERSSzVzdF9HbFpUdDA2bmZvOF9mTHd4cC1vbWNWSG9razktWHcyS1N6V0FwVXplTVN6cWhnQXI5cXgxb0FKLUFTa1JTUjA0NkVJQjlKSw?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Trump alerta que ‘há muito mais por vir’ após ataque destruir a maior ponte do Irã - R7</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcWJna1VQU3E0WlVYX2NYY1RmTlRUMjdMYUs4dFlsMXJNVEtSOHFJdkFyUnQ3SDNYVW9sR3BLUkNlNG96SjNFODUtMnNMSmJWdG5ZUndIX2hWVklMZDAxMGpHQW1YVy02dFJDU2cyZ0E1Rm5LZDhQc2xMQk1fNUZiXzFELTRGNFl0WlBfTWQxNWMwYWs3bGVFOXRISkxiT043ZVdUVVBKSGNjNlFPWVF0dG5GT0ZmWWN0OWh3?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Países do Golfo buscam resolução na ONU para permitir o uso da força no Estreito de Ormuz; Rússia e China se opõem - O Globo</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxNam1scEJwa01hbVdFck5WZ196Z2IwYURRNFMxU2ZibkFGY1JER3ZCWGFwY1U3azhvbHdZY0FWMjl1TDBJRzdyeXYzRk82UGhmR2ZzR1FTU3pEcXZ4ZC1OSXFXaHZLSnZ0cEdVUXJZanBTNjVYMmxaejdERFlNQ2hNQVZTa2FldkZvTzVTLVRPbmp2MHRIV1V5UHpNVHpFYWhTdHZGN1dYWmN6Z2pwSGU4ZGxYZWpTZ1FfU1drSG5selRVSUNqVDgweVZlQUR6RnJEdzJvNDh6UmlhQ0EyUTRCV1NpdW1HU0JPMG5mcEpveXZqb2tLdFBFTDdJaUhZQdIBjAJBVV95cUxOdnl5dHdIdXJnVllmOXN5V2RjdXkxUDJGRkJ2RXpyZ1BMTzVtbHUzZ0t3SzU1Z0c1dWdoamJTNE9WSGpGaU1xbC1ud05tSmx0dG1XS2U1TTVkT1JNWWJwOVRtS1U3dUFfamxsMkNEaWZYLXAtbjZkRzQyd3B4eDJia0ZVX3RYSFBsWWVFcTdsYndCVzhVaWozaGc3MmlubC1Udy0wZW44WUhnUXM3MkY5SE5aWmhvLXdrend6V0RYZEVTTVlubGFxOXk5TTNSUDlEbGRQVVA3ZThYTDh1SXVsZ1M5bWF0Q09XemVOQWsxMGxkTTZ4MF9MQXpjNzRDRGFoWE9yQlZNMEZia3dy?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Sem os EUA, cerca de 40 países se reúnem para discutir a reabertura do Estreito de Ormuz. - Jovem Pan</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxNR1I0eU9tTDFfYnJDbWJ1aUVTdmlHenQ4Snd0NkEwU0tZTGFhNHdsNlhIdUdtM2Y5dm11MkNXN0FUZFQzSEFhLThEUDNmLWxRWFZVZ1NTLV9kOExYRWdSSFJWUXdOMDRKQlh1SzNZZVRxWWJ2bHFpcFNXMk96R2pfNEl5cno1WlhuT3k0bHhYeEkyX0R6QXBGTkxzeGpmcXZrMDBFN3dOMmNwQ2c2cEtJWkxCWkQ5QmJJVlpidk9MQ0cwT2NxZFN1UFVYUQ?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Chefe do Pentágono pede saída do comandante do Exército dos EUA, diz site - G1</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQXFWSEVuQ1VTVDlWN0lJdHN6SWNfV1JOTEs0UjZxOFZlTHlfOE1scjZCSGJUQ0hsaFYxRHFNbE1NN1ZUWEpDalUxMkd3aFJoZjk2eF9HdFpBRWhIOGNtX3VleVl0Q1J6Vjc5R3U3ZldiMFNIVUdQME5tOHdmWUxoUmFySXZmR0tydU1OSWhvUjMwc2FYcWFsMURjYkdySzNfVzRyVTREejNjdnVEb3NBcTBkR2JCQU54YVlFMTg3QlpmZ9IB0AFBVV95cUxQU1JNTS1DaXF3ZmdsM0ZOSkhHbHdNSXpxZDVHREFGYmdRUHFzSkFLdmlDX3U4RVNuSkYzel9yUFFQTnV3MGcwUGk2eHNaUGgwRWQ5TGo4MTFUeTZXaGdVRTNxZG1rUElBZTBWWEYzbmNKbkhyOHVFck5SWDJYeXU0cDFSUjBhc0M0UGVCOEJaWi1EbEFxTnRvYlF6czBfSjBHYmgtTVVTSEhGUWlhNFFmbzBNOUVETnRXYURlclhyMjNzYVdEYzY3YlgxZk5tbWp6?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Eleições 2026: O plano do PT para conter alta de Flávio Bolsonaro nas pesquisas - BBC</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE55WFViRFpid3JYRVlRNUQ3WHNOa01NOWhONHhTZUhIZ2ZneDlkV0lrUkdCRlRDdnVMMU1mNklRcUNPQUh0ZVBxLS1fNTF2RjNZdlRPZWh5LVZtSUlXTE52Z0JR0gFnQVVfeXFMTUZBN3BhWGgteHlsdWE4SkJIMGpmTVAyaTNPTHZYSnpGdDh2czA2OXcybzR0UG01MDhwcGlIZ3hObkdwVUx4Z0RTM29xUjlYZDRCRXNHUWxfMDA0Ujh1TG5pOUIwVkpjdw?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Tenente preso por matar PM receberá aposentadoria mesmo se for expulso - CNN Brasil</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2NGazVCN200dm80emkwbVNMOG1hajh5aGVyM2lqX2h3VnJkLU5XanEwM1ktVm9VNUVySkpHaUM5bmdDM3V6ZkFMY21xVVJMY2RGZC1zME9nRXJ4RXpOdFJ0S08xWC1TaXJ2YlJLYVhWSGwzLTZRbjJnM0J5QkpwTERyOGdjdnVRZm5jVHdmRHVid0NXbzAtNmwtYmlxZVVxTXNVUDRsUXhWelRBTnpWQThGQTZUQWtETHZlZQ?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Trump demite procuradora-geral dos EUA, Pam Bondi - G1</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQeXRGSlk4aFBrOEYxdWtOdUZHZnZKSDI1M25hdkdQZzJxZG5pSWttZmpLc1BhZ0FzdE5ZUGY3MkNtRmVkdHhWRHc4WUV6QWpOZkVVeHFENDNOQkpwRHdDRWlidnotS1htZDAtbkt0amJLNUdJR3pCZ1V2bjN6Q0pqS29kTmVlVkZTdFlzb2FndG54b0p0TVJDbExzU3g1Y0VIRGfSAbABQVVfeXFMTnRyaHFJSmQ1V1ZtZTZEcXRZOXVsWTY4WlRLYThsanhtZlBSZFJSSlZCTXFFcURrY0ZvWXBRMGtpZ093MGNJVWtxYS1TTVpIRWhvM1A3X3BHbjA5QXlPTW9namtNcVRSTmhqQnB3WFBacm5qU2N3N3NrNGZVN1l3TFlrcHZmNWhERlJCSG44OG9FaExXbi1XbDRiNldKcTRFRmlvbFh3bVVuS2tRZXNRRUs?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>'Eles tratam os argentinos mal', diz advogada acusada de racismo no Rio ao chegar em Buenos Aires - O Globo</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxOa1JfaGxRNFNBeFdHOTRIal9wZzFsZVFNV2oyOTkwR1ZxbWhoVWxkMVItbW43RDBNUnFqWU9tNk42bmpGcUE5Smpid0RCTThNOG5yQ3MwSEtjbUZrNjdkUHQyV2xFUm5Jd1pFNWRJRDctcjZtZktrNFRkc2dXdXNYdVF0ZEZ1RENoT1BBVjFLbE5xRW80MUhDa0FKbG9md1R2NWdfQ3BZVzczOVlyV2VRdVhhUXFPV18zbWR2YmdsMUZJbkhNM2EtX1JXMndGSUREeW5sY3NURE0zNmE5N0I0TVBB?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Marqueteiro Sidônio manda Lula falar: “O Pix é nosso” - Poder360</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOOW55UHVNbWN5MHhNQ3hHMUt1LVBfSWVwbmI5ZW5raUFKamxPcDBuWDlCNXY5WVpmNnhENEdzUGt1QnQxRHRSdkVUVkVXanUxNlFDR1VsVTZTVGhkamJPNUFhMmNfUzRiLTJaakdPQ3RQRTNYenBmWndQbWl1NXhZOTVVWEh0M051dGZ2Zmd4aUJHWGZGbVFldQ?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Márcio França deixa ministério e encaminha composição com Haddad em São Paulo - O Globo</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPV1ZJcHRPaWNkVHM3SzRfa1A4TTQtdnM3SVo4ZkNXSUFtTnBkYkIyTVptNldLSWlLRlI0cjh2Tkc1QkF2eXlySTV0M2hCV3AtTXZEc2lWRUxwWDFqRHdJd1p1T1djTGFJNlI1X1JHZDMxQi1LdlAxTUFrVGc1R2tIUlg4MVJya1NkQWdvdDFZRkxQb0txcXZURjdCTXFEZnZScnk1YUpFekZkUmVtRUw5b3VVc1NFVWplUmxhamFLdmZ4ZTNZMHIybjlLZ0R0MVZiaEHSAeABQVVfeXFMUG5fSWdUZF9aLVNNcWRoekFyTVFzMFo0S1VmYkpHeGpZNjNjczdrNUhBY3cyT1RreF9vTF9adFpVaExUZlRHVHlxLXdGVnRwYkFRRFRpZm03N0ExcF9RVG1acm9hYklaaXJfWVVJXzV4QXVpdUxFTndDVElSbFptOHgzV1hPWDBURzl5WjN5QU10VFdEQUlBS08wX2ktbkxaTXZrV0JqeHA1OXd0SjROTlRzd2JRWHFRWkpmUVNhWURLTVFvYkxhYk9Vd2w5NEliZjh6THNYbVFiV1lKR0FZRWE?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Fachin critica relatório dos EUA e fala em "distorções" de decisões do STF - CNN Brasil</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOcmMzVVNDOWxidVVkNThlV3cwMnB3alZsZm1FVHJjZXZSZ252d1VvOE54Mk1sejFwMDVRb3pZcTFQakVvQTBwbkFEb0M1NGh4a3hVQ2xJb1VkazlJbjFEb1ZJTTg5U1YyeThCV3VxZ1pCVnZPWGo2NjV2WjRXWG1Lak9ILW5CS3ZnaDZjcGZrd3ZkWDVYN0RGV3NpZHN1em9DVVJfY1FVd1d2Sm1QS0dIZw?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Alerta vermelho: Grande Florianópolis entra na rota de temporais com raios e granizo - NSC Total</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQMnl0SHVhN2ZrajA3Y2FSZHdzQVV6SmVkZEc2MEJrLXQtc3BjUXhfcG10VmZ3am1ZZVRxT1FJMThkOVJIMFBJczFPTTBGalN5b0VadjdLWTVJSS1ucDlIaHVyeXVuT2F1ODd4emphOERSSzVzdF9HbFpUdDA2bmZvOF9mTHd4cC1vbWNWSG9razktWHcyS1N6V0FwVXplTVN6cWhnQXI5cXgxb0FKLUFTa1JTUjA0NkVJQjlKSw?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Trump alerta que ‘há muito mais por vir’ após ataque destruir a maior ponte do Irã - R7</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcWJna1VQU3E0WlVYX2NYY1RmTlRUMjdMYUs4dFlsMXJNVEtSOHFJdkFyUnQ3SDNYVW9sR3BLUkNlNG96SjNFODUtMnNMSmJWdG5ZUndIX2hWVklMZDAxMGpHQW1YVy02dFJDU2cyZ0E1Rm5LZDhQc2xMQk1fNUZiXzFELTRGNFl0WlBfTWQxNWMwYWs3bGVFOXRISkxiT043ZVdUVVBKSGNjNlFPWVF0dG5GT0ZmWWN0OWh3?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
+            <div class="card-principal">
+                <h2>Países do Golfo buscam resolução na ONU para permitir o uso da força no Estreito de Ormuz; Rússia e China se opõem - O Globo</h2>
+                <p>Conteúdo sendo atualizado pela nossa redação.</p>
+                <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxNam1scEJwa01hbVdFck5WZ196Z2IwYURRNFMxU2ZibkFGY1JER3ZCWGFwY1U3azhvbHdZY0FWMjl1TDBJRzdyeXYzRk82UGhmR2ZzR1FTU3pEcXZ4ZC1OSXFXaHZLSnZ0cEdVUXJZanBTNjVYMmxaejdERFlNQ2hNQVZTa2FldkZvTzVTLVRPbmp2MHRIV1V5UHpNVHpFYWhTdHZGN1dYWmN6Z2pwSGU4ZGxYZWpTZ1FfU1drSG5selRVSUNqVDgweVZlQUR6RnJEdzJvNDh6UmlhQ0EyUTRCV1NpdW1HU0JPMG5mcEpveXZqb2tLdFBFTDdJaUhZQdIBjAJBVV95cUxOdnl5dHdIdXJnVllmOXN5V2RjdXkxUDJGRkJ2RXpyZ1BMTzVtbHUzZ0t3SzU1Z0c1dWdoamJTNE9WSGpGaU1xbC1ud05tSmx0dG1XS2U1TTVkT1JNWWJwOVRtS1U3dUFfamxsMkNEaWZYLXAtbjZkRzQyd3B4eDJia0ZVX3RYSFBsWWVFcTdsYndCVzhVaWozaGc3MmlubC1Udy0wZW44WUhnUXM3MkY5SE5aWmhvLXdrend6V0RYZEVTTVlubGFxOXk5TTNSUDlEbGRQVVA3ZThYTDh1SXVsZ1M5bWF0Q09XemVOQWsxMGxkTTZ4MF9MQXpjNzRDRGFoWE9yQlZNMEZia3dy?oc=5" target="_blank" class="btn-ler">CONTINUAR LENDO NO PORTAL</a>
+            </div>
     </div>
-    <footer><p>© 2026 fatonahora.com.br - Sincronizado por AUREA</p></footer>
+    <div class="sidebar">
+        <div class="ad-space">ANÚNCIO LATERAL</div>
+        <div class="mais-lidas">
+            <h3 style="border-bottom: 2px solid #cc0000; color:#cc0000;">ARTIGOS EM DESTAQUE</h3>
+            <p><strong>1.</strong> Sincronia 1.618 em Serra-ES.</p>
+            <p><strong>2.</strong> Otimização de Hardware Ryzen 3.</p>
+        </div>
+        <div class="ad-space" style="height: 600px;">BANNER VERTICAL</div>
+    </div>
+</div>
+<footer style="text-align:center; padding:40px; color:#999;">© 2026 fatonahora.com.br - Sincronizado por AUREA</footer>
 </body>
 </html>
