@@ -3,109 +3,52 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fato na Hora - Liderança em Informação</title>
     <style>
         :root { --main-blue: #003566; --news-red: #cc0000; --bg-gray: #f2f2f2; --text-dark: #1a1a1a; }
-        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg-gray); margin: 0; color: var(--text-dark); }
-        
-        /* Cabeçalho Profissional */
-        .top-nav { background: #000; color: #fff; padding: 8px 0; text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; }
-        header { background: #fff; padding: 25px 0; border-bottom: 4px solid var(--news-red); }
-        .header-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-        .logo { font-size: 48px; font-weight: 900; color: var(--main-blue); letter-spacing: -2px; margin: 0; }
-        
-        /* Menu de Categorias */
-        nav { background: #fff; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 1000; }
-        .nav-links { max-width: 1200px; margin: auto; padding: 12px 20px; display: flex; gap: 25px; }
-        .nav-links a { text-decoration: none; color: var(--main-blue); font-weight: bold; font-size: 14px; text-transform: uppercase; }
-        .nav-links a:hover { color: var(--news-red); }
-
-        /* Layout em Grid (Padrão Sênior) */
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg-gray); margin: 0; }
+        .top-nav { background: #000; color: #fff; padding: 8px; text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; }
+        header { background: #fff; padding: 25px 0; border-bottom: 4px solid var(--news-red); text-align:center; }
+        .logo { font-size: 48px; font-weight: 900; color: var(--main-blue); letter-spacing: -2px; }
         .main-wrapper { max-width: 1200px; margin: 30px auto; display: grid; grid-template-columns: 1fr 300px; gap: 30px; padding: 0 20px; }
-        
-        /* Artigo Principal */
-        .article-card { background: #fff; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 4px; overflow: hidden; }
-        .article-content { padding: 30px; }
-        .article-card h2 { font-family: 'Georgia', serif; font-size: 32px; margin: 0 0 15px 0; line-height: 1.2; color: #000; }
-        .article-card p { font-size: 18px; line-height: 1.7; color: #333; text-align: justify; }
-        .meta { font-size: 12px; color: #888; text-transform: uppercase; margin-bottom: 10px; display: block; }
-        
-        /* Sidebar (Tendências) */
-        .sidebar-box { background: #fff; padding: 20px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .sidebar-box h3 { border-bottom: 2px solid var(--news-red); padding-bottom: 10px; margin-top: 0; }
-        .trending-item { padding: 15px 0; border-bottom: 1px solid #eee; font-size: 14px; font-weight: bold; cursor: pointer; }
-        .trending-item:hover { color: var(--news-red); }
-
-        footer { background: var(--main-blue); color: #fff; padding: 60px 20px; text-align: center; margin-top: 100px; }
+        .article-card { background: #fff; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 4px; padding: 30px; }
+        .article-card h2 { font-family: 'Georgia', serif; font-size: 32px; margin: 0 0 15px 0; }
+        .article-card p { font-size: 18px; line-height: 1.8; color: #333; text-align: justify; }
         .btn-link { display: inline-block; margin-top: 20px; color: var(--news-red); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--news-red); }
+        .sidebar { background: #fff; padding: 20px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: fit-content; }
     </style>
 </head>
 <body>
-    <div class="top-nav">Exclusivo: Cobertura Nacional em Tempo Real via Kernel Aurea 1.618</div>
-    <header>
-        <div class="header-container">
-            <h1 class="logo">FATO NA HORA</h1>
-            <div style="text-align:right; font-size:12px; color:#666;">02 de April de 2026 | 23:05</div>
-        </div>
-    </header>
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Destaques</a><a href="#">Brasil</a><a href="#">Política</a><a href="#">Tecnologia</a><a href="sobre.html">Sobre</a>
-        </div>
-    </nav>
-
+    <div class="top-nav">Exclusivo: Cobertura em Tempo Real via Kernel Aurea 1.618</div>
+    <header><h1 class="logo">FATO NA HORA</h1></header>
     <div class="main-wrapper">
         <section class="news-feed">
-            <div style="background:#eee; height:100px; margin-bottom:20px; text-align:center; line-height:100px; color:#999;">ESPAÇO PUBLICITÁRIO (ADSENSE PENDENTE)</div>
-            
             <article class="article-card">
-                <div class="article-content">
-                    <span class="meta">Notícia Atualizada</span>
-                    <h2>Fachin critica relatório dos EUA e fala em "distorções" de decisões do STF - CNN Brasil</h2>
-                    <p>Conteúdo em fase de apuração.</p>
-                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOcmMzVVNDOWxidVVkNThlV3cwMnB3alZsZm1FVHJjZXZSZ252d1VvOE54Mk1sejFwMDVRb3pZcTFQakVvQTBwbkFEb0M1NGh4a3hVQ2xJb1VkazlJbjFEb1ZJTTg5U1YyeThCV3VxZ1pCVnZPWGo2NjV2WjRXWG1Lak9ILW5CS3ZnaDZjcGZrd3ZkWDVYN0RGV3NpZHN1em9DVVJfY1FVd1d2Sm1QS0dIZw?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
-                </div>
+                <span style="color:#888; font-size:12px; text-transform:uppercase;">Notícia Nacional</span>
+                <h2>'Será?': Cleitinho quebra o silêncio sobre eleições em Minas - Estado de Minas</h2>
+                <p>Conteúdo em fase de revisão editorial.</p>
+                <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPWDViUGI4a29saklmbFBIenpKVDAyZ3lUZU9CeE5ESGhkMHZBMnNHMmN3Y3c1WmNHZWJvS3M1SkdBY010ZHJQZUJqNG9tb2l5V3VZWDlQR1hSLWgxMHo0NUlZaEVqM3ZOTnlMT3huN1hIX01lb2JqRWxJeXNDdmtJNmhqQ1lZY0VUU3UtQUttWktXSXVqVlNOUnZvcEllUWJmRHhuSmtkRW1oTWpj0gGyAUFVX3lxTFBVUUQxdElfOS1rcTNBbVBpZXJNelJkalVUeDd3bEpJMXdrMV9tVjJiSWFyTWJzTFNqMDhUbXZGY0JndmtNM1pTX05NdnJxcFBLcWpVWEZQU0RKOENtbzZXbGQ2OVhGa0NrdHBjMnlieUpNejRkTVpMc1FOR3pJQWlKSFVUb1U4eTdpRE0wdUxhNVNfVGJQblRNLTJzOThrSHN6YndvcU13QlZDZXlfZ1FFMEE?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
             </article>
             <article class="article-card">
-                <div class="article-content">
-                    <span class="meta">Notícia Atualizada</span>
-                    <h2>Camilo deixa MEC para ajudar campanha de Elmano, mas segue como plano B - UOL Notícias</h2>
-                    <p>Conteúdo em fase de apuração.</p>
-                    <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZWxMLXI5NXpEWjM5VFhRdEVoNVdQRDhoblA3Q1hyX1cydnJJMmRjekJwNllDSmM2Q2hMOGl2V1lwcXE1RXE4OWhDTUlzaFE5aEFFQ3M5YzRBRzY1a3pFQmJTMEJESFdFb3BkNXJoUDgxQWlmUVBaVlZiS0dORTNWaHN5aUZoQ0Z3SGs2clhYVXNlMEE5d2U3dUN1enJWX2FXMGhraEttWDJodzhjY3diVDM0SUlwYmxBMFhlRG96eW1nY2JtTFgzYg?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
-                </div>
+                <span style="color:#888; font-size:12px; text-transform:uppercase;">Notícia Nacional</span>
+                <h2>Fachin critica relatório dos EUA e fala em "distorções" de decisões do STF - CNN Brasil</h2>
+                <p>Conteúdo em fase de revisão editorial.</p>
+                <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOcmMzVVNDOWxidVVkNThlV3cwMnB3alZsZm1FVHJjZXZSZ252d1VvOE54Mk1sejFwMDVRb3pZcTFQakVvQTBwbkFEb0M1NGh4a3hVQ2xJb1VkazlJbjFEb1ZJTTg5U1YyeThCV3VxZ1pCVnZPWGo2NjV2WjRXWG1Lak9ILW5CS3ZnaDZjcGZrd3ZkWDVYN0RGV3NpZHN1em9DVVJfY1FVd1d2Sm1QS0dIZw?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
             </article>
             <article class="article-card">
-                <div class="article-content">
-                    <span class="meta">Notícia Atualizada</span>
-                    <h2>Países discutem Estreito de Ormuz em meio à incerteza sobre planos dos EUA - CNN Brasil</h2>
-                    <p>Conteúdo em fase de apuração.</p>
-                    <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOclhJZDZpYVFGRTZ2bVpGR2U0SXdXUXZwTEFjanVyUzFIaVZYRDdvS1FYM2h5ZlVKYlJ5UnZXcHF5Q3o2TGFvM3JMTFNDaXFXYzdZbWZTYVJTZFBVLVc5SFNfMVpKSFFwZ2swX19hdS0xWjJfLWhRVTBzR1pyeDFDSEFtYl9SMzRhQlFIMm1PYm9icm41UTFqc3Jnb1BUX0U3Z1NEX3NqM1hQdVdCbUNnQmJjMUNOVnhjX2c?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
-                </div>
+                <span style="color:#888; font-size:12px; text-transform:uppercase;">Notícia Nacional</span>
+                <h2>Países discutem Estreito de Ormuz em meio à incerteza sobre planos dos EUA - CNN Brasil</h2>
+                <p>Conteúdo em fase de revisão editorial.</p>
+                <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOclhJZDZpYVFGRTZ2bVpGR2U0SXdXUXZwTEFjanVyUzFIaVZYRDdvS1FYM2h5ZlVKYlJ5UnZXcHF5Q3o2TGFvM3JMTFNDaXFXYzdZbWZTYVJTZFBVLVc5SFNfMVpKSFFwZ2swX19hdS0xWjJfLWhRVTBzR1pyeDFDSEFtYl9SMzRhQlFIMm1PYm9icm41UTFqc3Jnb1BUX0U3Z1NEX3NqM1hQdVdCbUNnQmJjMUNOVnhjX2c?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
             </article>
             <article class="article-card">
-                <div class="article-content">
-                    <span class="meta">Notícia Atualizada</span>
-                    <h2>Países do Golfo buscam resolução na ONU para permitir o uso da força no Estreito de Ormuz; Rússia e China se opõem - O Globo</h2>
-                    <p>Conteúdo em fase de apuração.</p>
-                    <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxNam1scEJwa01hbVdFck5WZ196Z2IwYURRNFMxU2ZibkFGY1JER3ZCWGFwY1U3azhvbHdZY0FWMjl1TDBJRzdyeXYzRk82UGhmR2ZzR1FTU3pEcXZ4ZC1OSXFXaHZLSnZ0cEdVUXJZanBTNjVYMmxaejdERFlNQ2hNQVZTa2FldkZvTzVTLVRPbmp2MHRIV1V5UHpNVHpFYWhTdHZGN1dYWmN6Z2pwSGU4ZGxYZWpTZ1FfU1drSG5selRVSUNqVDgweVZlQUR6RnJEdzJvNDh6UmlhQ0EyUTRCV1NpdW1HU0JPMG5mcEpveXZqb2tLdFBFTDdJaUhZQdIBjAJBVV95cUxOdnl5dHdIdXJnVllmOXN5V2RjdXkxUDJGRkJ2RXpyZ1BMTzVtbHUzZ0t3SzU1Z0c1dWdoamJTNE9WSGpGaU1xbC1ud05tSmx0dG1XS2U1TTVkT1JNWWJwOVRtS1U3dUFfamxsMkNEaWZYLXAtbjZkRzQyd3B4eDJia0ZVX3RYSFBsWWVFcTdsYndCVzhVaWozaGc3MmlubC1Udy0wZW44WUhnUXM3MkY5SE5aWmhvLXdrend6V0RYZEVTTVlubGFxOXk5TTNSUDlEbGRQVVA3ZThYTDh1SXVsZ1M5bWF0Q09XemVOQWsxMGxkTTZ4MF9MQXpjNzRDRGFoWE9yQlZNMEZia3dy?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
-                </div>
-            </article>
-        </section>
-        
-        <aside class="sidebar">
-            <div class="sidebar-box">
-                <h3>MAIS LIDAS</h3>
-                <div class="trending-item">1. Entenda como a análise de dados está mudando as eleições.</div>
-                <div class="trending-item">2. Novas fronteiras tecnológicas no interior do Espírito Santo.</div>
-                <div class="trending-item">3. O impacto do dólar na cesta básica do brasileiro.</div>
-            </div>
-        </aside>
+                <span style="color:#888; font-size:12px; text-transform:uppercase;">Notícia Nacional</span>
+                <h2>Países do Golfo buscam resolução na ONU para permitir o uso da força no Estreito de Ormuz; Rússia e China se opõem - O Globo</h2>
+                <p>Conteúdo em fase de revisão editorial.</p>
+                <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxNam1scEJwa01hbVdFck5WZ196Z2IwYURRNFMxU2ZibkFGY1JER3ZCWGFwY1U3azhvbHdZY0FWMjl1TDBJRzdyeXYzRk82UGhmR2ZzR1FTU3pEcXZ4ZC1OSXFXaHZLSnZ0cEdVUXJZanBTNjVYMmxaejdERFlNQ2hNQVZTa2FldkZvTzVTLVRPbmp2MHRIV1V5UHpNVHpFYWhTdHZGN1dYWmN6Z2pwSGU4ZGxYZWpTZ1FfU1drSG5selRVSUNqVDgweVZlQUR6RnJEdzJvNDh6UmlhQ0EyUTRCV1NpdW1HU0JPMG5mcEpveXZqb2tLdFBFTDdJaUhZQdIBjAJBVV95cUxOdnl5dHdIdXJnVllmOXN5V2RjdXkxUDJGRkJ2RXpyZ1BMTzVtbHUzZ0t3SzU1Z0c1dWdoamJTNE9WSGpGaU1xbC1ud05tSmx0dG1XS2U1TTVkT1JNWWJwOVRtS1U3dUFfamxsMkNEaWZYLXAtbjZkRzQyd3B4eDJia0ZVX3RYSFBsWWVFcTdsYndCVzhVaWozaGc3MmlubC1Udy0wZW44WUhnUXM3MkY5SE5aWmhvLXdrend6V0RYZEVTTVlubGFxOXk5TTNSUDlEbGRQVVA3ZThYTDh1SXVsZ1M5bWF0Q09XemVOQWsxMGxkTTZ4MF9MQXpjNzRDRGFoWE9yQlZNMEZia3dy?oc=5" target="_blank" class="btn-link">Leia a fonte original completa ></a>
+            </article></section>
+        <aside class="sidebar"><h3>MAIS LIDAS</h3><p><strong>#1</strong> Sincronia 1.618 em Serra-ES</p><p><strong>#2</strong> Otimização de Hardware Ryzen</p></aside>
     </div>
-
-    <footer>
-        <p><strong>FATO NA HORA</strong> - Independência e Rigor Jornalístico</p>
-        <p style="font-size: 11px; color: #ccc;">© 2026 fatonahora.com.br - Sincronizado por Bunker 01</p>
-    </footer>
+    <footer style="background:var(--main-blue); color:white; padding:40px; text-align:center;">© 2026 fatonahora.com.br</footer>
 </body>
 </html>
